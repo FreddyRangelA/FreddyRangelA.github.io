@@ -1,0 +1,91 @@
+body {
+  background-color: white;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+/* <!-----this div is for the contact bottom, share and contac us---> */
+.font-head {
+  color: #eef9bf;
+}
+
+.navbar-brand {
+  color: #eef9bf;
+}
+
+/* ---- */
+/* <!-----our information---> */
+.info {
+  margin: 0 auto 0 auto;
+}
+
+.hr {
+  border: none;
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #eef9bf;
+  border-width: thick;
+  width: 1%;
+}
+
+.whyP {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.why {
+  line-height: 3;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  background-color: white;
+  margin: 3% 0;
+}
+
+.why:hover {
+  color: black;
+  background-color: #eef9bf
+}
+
+.how {
+  color: #eef9bf;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  background-color: black;
+  margin: 3% 0;
+}
+
+.icon-how:hover {
+  color: white;
+}
+
+.icons-box {
+  padding: 7% 3%;
+}
+
+/* <!-----this section is for the packages offerted---> */
+#card-package {
+  padding: 50px;
+  text-align: center;
+}
+
+.card-column-pk {
+  padding: .5%;
+  background-color: black;
+}
+
+.card-column {
+  padding: 3% 2%;
+}
