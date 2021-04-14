@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: rgb(128, 125, 126);
   margin: 0;
 }
 
@@ -51,7 +51,7 @@ h2 {
   font-family: "Lato", sans-serif;
   text-align: center;
   background-color: white;
-  margin: 3% 0;
+  background-size: 50% 50%;
 }
 
 .why:hover {
