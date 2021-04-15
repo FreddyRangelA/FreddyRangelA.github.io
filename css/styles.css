@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(128, 125, 126);
+  background-color: rgb(189, 193, 196);
   margin: 0;
 }
 
@@ -10,6 +10,7 @@ img {
 }
 
 h1 {
+  color: rgb(107, 240, 206);
   margin: 0;
 }
 
@@ -17,14 +18,6 @@ h2 {
   margin: 0;
 }
 
-/* <!-----this div is for the contact bottom, share and contac us---> */
-.font-head {
-  color: #eef9bf;
-}
-
-.navbar-brand {
-  color: #eef9bf;
-}
 
 /* ---- */
 /* <!-----our information---> */
@@ -47,17 +40,19 @@ h2 {
 }
 
 /*-----class for the main website rice--*/
-.why {
-  line-height: 3;
+.intro {
+  line-height: 1.5;
   font-family: "Lato", sans-serif;
   text-align: center;
   background-color: white;
-  padding-left: 45px;
-  padding-right: 400px;
+  margin-top: 100px;
+  margin-left: 45px;
+  margin-right: 700px;
 
 }
 
-.why:hover {
+
+.intro:hover {
   color: black;
   background-color: #eef9bf
 }
@@ -70,14 +65,6 @@ h2 {
   margin: 3% 0;
 }
 
-.icon-how:hover {
-  color: white;
-}
-
-.icons-box {
-  padding: 7% 3%;
-}
-
 /* <!-----this section is for the packages offerted---> */
 #card-package {
   padding: 50px;
@@ -85,10 +72,22 @@ h2 {
 }
 
 .card-column-pk {
-  padding: .5%;
-  background-color: black;
+  top: 80px;
+  left: 80px;
+  
 }
 
-.card-column {
-  padding: 3% 2%;
+#latidudBox {
+  width: 700px;
+  
+}
+
+#visualisations{
+ 
+  
+}
+#imageIndex{
+  width: 100% \9;
+  height:300px;
+
 }
