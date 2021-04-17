@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Humidity</title>
+
+<!---local link-->
+      <link rel="icon" href="favicon.ico">
+      <!-- google fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+      <!-- fontawesome for icons -->
+      <script src="https://kit.fontawesome.com/b85da507c9.js" crossorigin="anonymous"></script>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <!-- local css -->
+      <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body class="body">
+        <!-----nav bar-------------------------------------------------------------------------------------------->
+        <section id="top-bar">
+            <div id="headContat" class="font-head">
+              <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
+                <a class="navbar-brand  " href="#">Latitud</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item">
+                        <a class="nav-link" href=""><i class="fas fa-share-alt"></i></a>
+            
+                        </li >
+                            
+                        <li class="nav-item">
+                            <div class="dropleft">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Plot
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <button class="dropdown-item" type="button"><a href="comparison.html">comparison</a> </button>
+                                <button class="dropdown-item" type="button"><a href="data.html">Data</a></button>
+                                <button class="dropdown-item" type="button"><a href="maxtemp.html">Max Temp</a></button>
+                                <button class="dropdown-item" type="button"><a href="visualization.html">Visualization</a></button>
+                                </div>
+                            </div>
+
+                        </li>
+                        <div>
+                            <button class="dropdown-item" type="button"><a href="comparison.html">comparison</a> </button>
+                        </div>
+                        <div>
+                            <button class="dropdown-item" type="button"><a href="data.html">Data</a></button>
+                        </div>
+
+                    </ul>
+                </div>
+        
+              </nav>
+        
+            </div>
+        
+        </section> 
+        <!--------------------------------------body section starts here--------------------------------------------------->
+
+        <section id="main_body" class=" ">
+            <section id="sumaryIndex"  >
+                <div class="container" >
+                    <div class="row">
+                        <div class="col-sm-6  card-column-pk">
+                            <div id="" class="card " >
+                                <div class="card-header">
+                                    <h1>
+                                        Humidity
+                                    </h1>
+                                </div>
+                                <div class="card-body">
+                                    <div >
+                                        <img class="img-responsive" style="float:top; width:400px;height:300px;" src="Resources/assets/images/Fig2.png"> 
+                                    </div>
+                                    <div>
+                                        <p>Part 1-WeatherPy Analysis: Weather prediction has always been on every traveler's mind. Finding the right information in order to plan the perfect trip is what every family vacation needs. 
+                                            By using Google API in conjunction with python and Jupyter NoteBooks, the correct data can be gathered.
+                                            FIrst the data gets pulled out of the CSV file, under specific parameters such as longitude and latitude. 
+                                            With these parameters the request to Google’s API is made. Next, the base DataFrame is created with all the cities location. 
+                                            Places with high humidity get removed. Finally, the data gets organized and plotted. Based on those visualisation the following conclusion can be reached:
+                                            The closer to the equator the higher the temperatures and as moved away from the equator temperatures tend to drop. Humidity is codirebly more changing in the northern hemisphere. 
+                                            There are more places on the same hemisphere with very different values for humidity. The behavior for cloud formation does not seem to be affected but the geographical location. 
+                                            Cloud formation seems more at random than following any path.
+                                        </p>
+                    
+                                    </div>
+    
+                                </div>
+                            
+                                
+                            </div>
+                        </div>
+
+                        <div class="  col-sm-6  card-column-pk">
+                            <div id="" class="card ">
+                                <div class="card-header">
+                                    <h1>
+                                        Visualiations
+                                    </h1>
+    
+                                </div>
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div  class="col-md-6 ">
+                                                <img id="imageIndex" class="img-thumbnail " alt="Responsive image" src="Resources/assets/images/Fig1.png">
+                                            </div>
+                                            
+                                            <div  class="col-md-6">
+                                                <img id="imageIndex" class="img-thumbnail alert alert-success" alt="Responsive image" style=" "  src="Resources/assets/images/Fig2.png">
+                                            </div>
+                                            <div class="w-100"></div>
+                                            <div  class="col-md-6">
+                                                <img id="imageIndex" class="img-thumbnail" alt="Responsive image"  src="Resources/assets/images/Fig3.png">
+                                            </div>
+                                            <div  class="col-md-6">
+                                                <img id="imageIndex" class="img-thumbnail " alt="Responsive image"  src="Resources/assets/images/Fig4.png">
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                            
+                                </div>
+    
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                
+
+                </div>
+            </section>
+        </section>
+                
+                
+        </section>
+
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+      
+</html>
