@@ -1,12 +1,15 @@
+html{
+  position: relative;
+}
+
 body {
   background-color: rgb(189, 193, 196);
   margin: 0;
 }
 
-img {
-  width: 100%;
-  height: 500px;
-  background-size: cover;
+img{
+  width:300px;
+  height:200px;
 }
 
 h1 {
@@ -19,27 +22,12 @@ h2 {
 }
 
 
-/* ---- */
-/* <!-----our information---> */
-.info {
-  margin: 0 auto 0 auto;
-}
-
-.hr {
-  border: none;
-  border-style: none;
-  border-top-style: dotted;
-  border-color: #eef9bf;
-  border-width: thick;
-  width: 1%;
-}
-
 .whyP {
   text-align: center;
   font-size: 2rem;
 }
 
-/*-----class for the main website rice--*/
+/*-----class for the main website--*/
 .intro {
   line-height: 1.5;
   font-family: "Lato", sans-serif;
@@ -83,14 +71,28 @@ h2 {
 }
 
 #visualisations{
+  width: 700px;
  
   
-}
-#imageIndex{
-  width: 100% \9;
-  height:300px;
-
 }
 
 .dropleft:hover {
   display: block;}
+  
+.table-wrapper {
+    
+    max-height: 800px;
+    overflow: auto;
+    display:inline-block;
+  }
+  .card-column-data{
+  top: 80px;
+  left: 80px;
+  width: 1000px;
+  }
+
+  #mptext{
+    text-align: center;
+    color: rgb(93, 209, 180);
+    
+  }

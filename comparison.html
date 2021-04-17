@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Comparison</title>
+        <title>Max Temp</title>
 
 <!---local link-->
       <link rel="icon" href="favicon.ico">
@@ -16,7 +16,7 @@
     </head>
 
     <body class="body">
-
+        <!-----nav bar-------------------------------------------------------------------------------------------->
         <section id="top-bar">
             <div id="headContat" class="font-head">
               <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
@@ -34,19 +34,20 @@
                         </li >
                             
                         <li class="nav-item">
-                            <div class="btn-group dropleft">
+                            <div class="dropleft">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Plot
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <button class="dropdown-item" type="button"><a href="index.html">Sumary</a></button>
-                                <button class="dropdown-item" type="button">Another action</button>
-                                <button class="dropdown-item" type="button">Something else here</button>
+                                <button class="dropdown-item" type="button"><a href="index.html">Sumary</a> </button>
+                                <button class="dropdown-item" type="button"><a href="data.html">Data</a></button>
+                                <button class="dropdown-item" type="button"><a href="maxtemp.html">Max Temp</a></button>
+                                <button class="dropdown-item" type="button"><a href="visualization.html">Visualization</a></button>
                                 </div>
                             </div>
 
                         </li>
-                   
+
                     </ul>
                 </div>
         
@@ -54,99 +55,67 @@
         
             </div>
         
-          </section> 
+        </section> 
+        <!--------------------------------------body section starts here--------------------------------------------------->
 
-
-        <section id= "top_bar">
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-        </section>
         <section id="main_body" class=" ">
-            
             <section id="sumaryIndex"  >
-                <div class="row" >
-                    <div class="col-md-4 col-sm card-column-pk">
-                        <div id="latidudBox" class="card card-column" >
-                            <div class="card-header">
-                                <h1>
-                                    Latitud
-                                </h1>
-                            </div>
-                            <div class="card-body">
-                                <div >
-                                    <img class="img-responsive" style="float:left;width:400px;height:300px;" src="Resources/assets/images/Fig1.png"> 
+                <div class="container" >
+                    <div class="row">
+                        <div class="  col-sm-10  card-column-pk">
+                            <div id="" class="card ">
+                                <div class="card-header">
+                                    <h1>
+                                        comparison: Latitud vs X.
+                                    </h1>
+    
                                 </div>
-                                <div>
-                                    <p>Part 1-WeatherPy Analysis: Weather prediction has always been on every traveler's mind. Finding the right information in order to plan the perfect trip is what every family vacation needs. 
-                                        By using Google API in conjunction with python and Jupyter NoteBooks, the correct data can be gathered.
-                                        FIrst the data gets pulled out of the CSV file, under specific parameters such as longitude and latitude. 
-                                        With these parameters the request to Google’s API is made. Next, the base DataFrame is created with all the cities location. 
-                                        Places with high humidity get removed. Finally, the data gets organized and plotted. Based on those visualisation the following conclusion can be reached:
-                                        The closer to the equator the higher the temperatures and as moved away from the equator temperatures tend to drop. Humidity is codirebly more changing in the northern hemisphere. 
-                                        There are more places on the same hemisphere with very different values for humidity. The behavior for cloud formation does not seem to be affected but the geographical location. 
-                                        Cloud formation seems more at random than following any path.
-                                    </p>
-                
-                                </div>
-
-                            </div>
-                        
-                            
-                        </div>
-                    </div>
-                
-                    <div class="col-md-4 col-sm card-column-pk">
-                        <div id="visualisations" class="card card-column">
-                            <div class="card-header">
-                                <h1>
-                                    Visualiations
-                                </h1>
-
-                            </div>
-                            <div class="card-body">
-                                <div class="container">
-                                    <div class="row">
-                                      <div  class="col-md-4 col-sm">
-                                        <img id="imageIndex" class="" alt="Responsive image" style=" " src="Resources/assets/images/Fig1.png">
-                                      </div>
-                                      
-                                      <div  class="col-md-4 col-sm">
-                                        <img id="imageIndex" class=" " alt="Responsive image" style=" "  src="Resources/assets/images/Fig2.png">
-                                      </div>
-                                      <div class="w-100"></div>
-                                      <div  class="col-md-4 col-sm">
-                                        <img id="imageIndex" class="img-fluid " alt="Responsive image"  src="Resources/assets/images/Fig3.png">
-                                      </div>
-                                      <div  class="col-md-4 col-sm">
-                                        <img id="imageIndex" class="img-fluid " alt="Responsive image"  src="Resources/assets/images/Fig4.png">
-                                      </div>
-                                      
+                                <div class="card-body">
+                                    <div class="container">
+                                        <p>Click any plot to get and in-depth analysis</p>
+                                        <div class="row">
+                                            <div  class="col-md-6 ">
+                                                <p id="mptext"class="center"><strong>vs. Max temperatures</strong></p>
+                                                <a href="maxtemp.html"><img id="imageIndex" class="img-thumbnail" alt="Responsive image" src="Resources/assets/images/Fig1.png"></a>
+                                            </div>
+                                            
+                                            <div  class="col-md-6">
+                                                <p id="mptext"class="center"><strong>city Latitud vs. Humidity</strong></p>
+                                                <a href=""><img id="imageIndex" class="img-thumbnail " alt="Responsive image" style=" "  src="Resources/assets/images/Fig2.png"></a>
+                                            </div>
+                                            <div class="w-100"></div>
+                                            <div  class="col-md-6">
+                                                <p id="mptext"class="center"><strong>city Latitud vs. cloudiness</strong></p>
+                                                <a href=""><img id="imageIndex" class="img-thumbnail" alt="Responsive image"  src="Resources/assets/images/Fig3.png"></a>
+                                            </div>
+                                            <div  class="col-md-6">
+                                                <p id="mptext"class="center"><strong>city Latitud vs. windspeed</strong></p>
+                                                <a href=""><img id="imageIndex" class="img-thumbnail " alt="Responsive image"  src="Resources/assets/images/Fig4.png"></a>
+                                            </div>
+                                        
+                                        </div>
                                     </div>
+                            
                                 </div>
-                           
+    
                             </div>
-
                         </div>
+
                     </div>
-                </div>
                     
-            
-        </section>
-        <section id="home_list">
-            <ul>
+                
 
-            </ul>
-
+                </div>
+            </section>
         </section>
+                
+                
+        </section>
+
         
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-      </body>
+    </body>
       
 </html>
